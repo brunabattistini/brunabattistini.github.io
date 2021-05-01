@@ -1,0 +1,79 @@
+---
+layout: default
+section_id: portfolio
+works:
+  - image: images/Arte/Desenhos/escape.jpg
+    class: art
+    title: Escape
+    desc: "Concept &amp; Realization"
+  - image: images/@stock/msn-work-2.jpg
+    class: art print
+    title: Look at me
+    desc: "Design &amp; Development"
+  - image: images/@stock/msn-work-3.jpg
+    class: brand wide
+    title: Am I cute
+    desc: "Design &amp; Development"
+  - image: images/@stock/msn-work-4.jpg
+    class: development
+    title: Umbrella
+    desc: "Design &amp; Development"
+  - image: images/@stock/msn-work-5.jpg
+    class: print brand
+    title: Canned Bros
+    desc: "Design &amp; Development"
+  - image: images/@stock/msn-work-8.jpg
+    class: art
+    title: Hale
+    desc: "Design &amp; Development"
+  - image: images/@stock/msn-work-6.jpg
+    class: art wide
+    title: A beautiful day
+    desc: "Design &amp; Development"
+
+
+---
+
+<div class='full' style='background: #333'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h2 style='color: #fff;'>Some of My Works</h2>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+<div class='two spacing'></div>
+<div class='spacing'></div>
+<div class='mod modMasonryGallery'>
+  <div class='gallery-nav'>
+    <ul>
+      <li class='current'>
+        <a data-cat='all' href='#'>All</a>
+      </li>
+      <li>
+        <a data-cat='art' href='#'>Art</a>
+      </li>
+      <li>
+        <a data-cat='architecture' href='#'>Architecture</a>
+      </li>
+      <li>
+        <a data-cat='curation' href='#'>Curation</a>
+      </li>
+    </ul>
+  </div>
+  <ul class='gallery'>
+    {% for work in page.works %}
+      <li class='{{work.class}}'>
+        <a href="{{work.link}}">
+          <img alt="" src="{{work.image}}" />
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{work.title}}</h3>
+              <p>{{work.desc}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

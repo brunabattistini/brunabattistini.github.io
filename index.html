@@ -6,6 +6,7 @@ section_id: home
 <div class='mod modMasonryGallery'>
   <ul class='gallery'>
     {% for work in site.projects %}
+    {% if work.highlighted == true %}
         <li class='{{work.class}}'>
           <a href="{{work.url}}">
             <img alt="" src="{{work.excerpt-image}}" />
@@ -16,7 +17,8 @@ section_id: home
               </div>
             </div>
           </a>
-        </li>
-    {% endfor %}
+        </li
+    {% endif  %}    
+  {% endfor %}
   </ul>
 </div>

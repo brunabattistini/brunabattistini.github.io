@@ -9,8 +9,9 @@ images:
   - /images/Arte/Desenhos/escape.jpg
   - /images/Arte/Desenhos/mascaras.jpg
   - /images/Arte/Desenhos/medo.jpg    
-when: 
-
+when: June 2020
+highlighted: true
+action-link: "https://www.flickr.com/photos/brunabattistiniferreiracosta/albums/72157610895596973"
 
 ---
 

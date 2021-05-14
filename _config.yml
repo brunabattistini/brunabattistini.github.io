@@ -18,17 +18,9 @@ markdown: kramdown
 #paginate_path: "blog/page:num"
 
 collections:
-  portfolio:
+  projects  :
     output: true
     permalink: /:collection/:path/
+    images:
 
 
-defaults:
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true

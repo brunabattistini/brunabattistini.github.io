@@ -15,9 +15,17 @@
 #      path: portfolio.html
 #    - name: Portfolio item
 #      path: portfolio-item.html
+- name: Projects
+  path: projects/
+  section_id: projects
+
+
+
 - name: Contact
   path: contact.html
   section_id: contact
+
+
 #- name: Blog
 #  path: blog/
 #  section_id: blog

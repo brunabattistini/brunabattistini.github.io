@@ -35,18 +35,13 @@ section_id: portfolio
   <ul class='gallery'>
     {% for work in site.projects %}
       <li class='{{work.class}}'>
-        <!-- a href="{{work.link}}">
-          <img alt="" src="{{work.image}}" />
+        <a href="{{work.url}}">
+          <img alt="" src="{{work.excerpt-image}}" />
           <div class='overlay'>
             <div class='thumb-info'>
               <h3>{{work.title}}</h3>
-              <p>{{work.desc}}</p -->
-
-       <a href="{{ work.url }}"> link  </a>
-      <h2>{{ work.title }} </h2>
+              <p>{{work.class}}</p -->
       <!-- p>{{ work.content | markdownify }}</p -->
-     
-
 
             </div>
           </div>

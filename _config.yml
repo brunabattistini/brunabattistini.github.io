@@ -14,16 +14,19 @@ instagram_username: brunabattistini
 markdown: kramdown
 
 
-#paginate: 4
-#paginate_path: "blog/page:num"
-
 collections:
-  projects  :
+  projects:
     output: true
     permalink: /:collection/:path/
+    excerpt-image: 
     images:
+    class: #art, architecture, curation
+    when:
+    #content: already exists
+    #title: #already exists
+    highlighted: #true or #false
 
 
 
 
-category-list: [aaa, bbb, ccc, ddd]
+#category-list: [aaa, bbb, ccc, ddd]

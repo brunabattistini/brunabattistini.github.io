@@ -7,16 +7,16 @@
 # - name: Services
 #  path: services.html
 #  section_id: services
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
+#- name: Portfolio
+#  path: portfolio.html
+#  section_id: portfolio
 #  children:
 #    - name: Portfolio
 #      path: portfolio.html
 #    - name: Portfolio item
 #      path: portfolio-item.html
 - name: Projects
-  path: projects/
+  path: listofprojects.html
   section_id: projects
 
 

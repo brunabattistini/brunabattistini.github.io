@@ -24,7 +24,8 @@
       <div class='mod modBoxedSlider'>
         <div class='slides'>
           {% for image in page.images %}
-            <div class='slide'>
+            <!-- div class='slide' -->
+            <div  class="carousel slide" data-ride="carousel">
               <img alt="" src="{{image}}" />
             </div>
           {% endfor %}

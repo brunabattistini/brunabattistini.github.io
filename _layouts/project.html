@@ -7,7 +7,8 @@
 
     {% include header.html base="index.html" %}
 
-  
+
+
 
 <div class='full' style='background: #333'>
   <div class='row'>
@@ -23,15 +24,60 @@
     <div class='large-12 columns'>
       <div class='mod modBoxedSlider'>
         <div class='slides'>
-          {% for image in page.images %}
-            <!-- div class='slide' -->
-            <div  class="carousel slide" data-ride="carousel">
-              <img alt="" src="{{image}}" />
-            </div>
-          {% endfor %}
+
+
+
+
+ <!-- div id="carouselExampleIndicators" class="carousel slide col-xl-7 col-lg-12 col-md-12 col-12 " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/images/Arte/Desenhos/escape.jpg" alt="First slide">
         </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/Arte/Desenhos/mascaras.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/Arte/Desenhos/medo.jpg" alt="Third slide">
+        </div>
+
       </div>
-    </div>
+      </div -->
+
+
+
+
+     <div id="carouselExampleIndicators" class="carousel slide col-xl-12 col-lg-12 col-md-12 col-12 " data-ride="carousel">
+     <ol class="carousel-indicators">    
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+         
+          {% for image in page.images %}
+
+           
+
+                    <li data-target="#carouselExampleIndicators" data-slide-to=" {%increment counter%}"></li>
+            {% endfor %}
+      </ol>
+
+
+      <div class='carousel-inner'>
+          {% assign image = page.images.first %}
+            <div  class="carousel-item active">
+              <img class="d-block w-100" src="{{image}}" alt="One slide" />
+            </div>
+          {% for image in page.images offset:1 %}
+            <div  class="carousel-item">
+              <img class="d-block w-100" src="{{image}}" alt="A slide" />
+            </div>  {% endfor %}
+      </div>
+      </div>
+
+
+
   </div>
   <div class='spacing'></div>
   <div class='row'>
@@ -40,6 +86,7 @@
       <p>
         {{content}}
       </p>
+
 
       <div class='spacing'></div>
       
@@ -91,7 +138,16 @@
   <div class='four spacing'></div>
 </div>
 
+
     {% include footer.html %}
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 
   </body>
 
